@@ -1,8 +1,20 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import { useEffect } from "react";
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const redirectTimeout = setTimeout(() => {
+      router.push("https://stockmarketsecrets.exposed");
+    }, 2000);
+
+    return () => clearTimeout(redirectTimeout);
+  }, []);
+
   return (
     <div className="container">
       <Head>
@@ -12,12 +24,10 @@ export default function Home() {
 
       <main>
         <Header title="Wooten Wealth" />
-        <p className="description">
-          Coming Soon
-        </p>
+        <p className="description">Coming Soon</p>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
