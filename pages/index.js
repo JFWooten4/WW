@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       router.push("https://stockmarketsecrets.exposed");
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(redirectTimeout);
   }, []);
