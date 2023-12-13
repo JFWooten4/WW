@@ -16,7 +16,7 @@ export default function Home() {
         <iframe
           aria-label="Wooten Wealth Pre-Launch Signups"
           frameBorder="0"
-          style={{ height: "500px", width: "99%", border: "none" }}
+          style={{ height: "600px", width: "99%", border: "none" }}
           src="https://forms.zohopublic.com/blocktransfer/form/WootenWealthPreLaunchSignups/formperma/93cnN8rejRNSy4wtlV7CELjldUtFNpkG-PYGBwrfBK4"
         ></iframe>
       </main>
