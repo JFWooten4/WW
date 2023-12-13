@@ -11,11 +11,11 @@ export default function Home() {
       </Head>
 
       <main>
-        {/* Add Image */}
+        {/* Add Image with marginTop */}
         <img
           src="imgs/smse-desktop.png"
           alt="Stock Market Secrets Exposed"
-          style={{ maxWidth: "500px", height: "auto" }}
+          style={{ maxWidth: "500px", height: "auto", marginTop: "35px" }} // Add marginTop
         />
 
         {/* Embed Zoho Form */}
@@ -28,14 +28,6 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      <style jsx>{`
-        .title {
-          color: white; /* Make the title white */
-          font-family: Georgia, serif; /* Change the font to Georgia */
-          margin-bottom: 20px; /* Add more space under the title */
-        }
-      `}</style>
     </div>
   );
 }
