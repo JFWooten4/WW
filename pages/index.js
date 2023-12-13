@@ -24,10 +24,29 @@ export default function Home() {
 
       <main>
         <Header title="Wooten Wealth" />
-        <p className="description">Coming Soon</p>
+        {/* Embed Zoho Form */}
+        <div id="zohoFormContainer"></div>
       </main>
 
       <Footer />
+      <script type="text/javascript">
+        // Load Zoho Form
+        var formScript = document.createElement("script");
+        formScript.type = "text/javascript";
+        formScript.src =
+          "https://forms.zohopublic.com/js/zEmbed.js";
+        document.body.appendChild(formScript);
+
+        // Define form settings
+        var zf_settings = {
+          formid: "yourFormID",
+          domain: "yourDomain",
+          width: "100%",
+        };
+        var zf_perma = zf_perma || {};
+        zf_perma.showForm = true;
+        zf_perma["yourFormID"] = zf_settings;
+      </script>
     </div>
   );
 }
