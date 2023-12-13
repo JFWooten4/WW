@@ -4,7 +4,7 @@ import Footer from "@components/Footer";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundColor: "#201F1D" }}>
       <Head>
         <title>Wooten Wealth</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,6 +12,13 @@ export default function Home() {
 
       <main>
         <Header title="Wooten Wealth" />
+        {/* Add Image */}
+        <img
+          src="imgs/smse-desktop.png"
+          alt="Stock Market Secrets Exposed"
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+
         {/* Embed Zoho Form */}
         <iframe
           aria-label="Wooten Wealth Pre-Launch Signups"
