@@ -11,13 +11,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Wooten Wealth" />
-
         {/* Add Image */}
         <img
           src="imgs/smse-desktop.png"
           alt="Stock Market Secrets Exposed"
-          style={{ maxWidth: "420px", height: "auto" }}
+          style={{ maxWidth: "500px", height: "auto" }}
         />
 
         {/* Embed Zoho Form */}
