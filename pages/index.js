@@ -16,7 +16,7 @@ export default function Home() {
         <img
           src="imgs/smse-desktop.png"
           alt="Stock Market Secrets Exposed"
-          style={{ maxWidth: "100%", height: "auto" }}
+          style={{ maxWidth: "200px", height: "auto" }}
         />
 
         {/* Embed Zoho Form */}
