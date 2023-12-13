@@ -12,11 +12,12 @@ export default function Home() {
 
       <main>
         <Header title="Wooten Wealth" />
+
         {/* Add Image */}
         <img
           src="imgs/smse-desktop.png"
           alt="Stock Market Secrets Exposed"
-          style={{ maxWidth: "200px", height: "auto" }}
+          style={{ maxWidth: "300px", height: "auto" }}
         />
 
         {/* Embed Zoho Form */}
@@ -29,6 +30,14 @@ export default function Home() {
       </main>
 
       <Footer />
+
+      <style jsx>{`
+        .title {
+          color: white; /* Make the title white */
+          font-family: Georgia, serif; /* Change the font to Georgia */
+          margin-bottom: 20px; /* Add more space under the title */
+        }
+      `}</style>
     </div>
   );
 }
