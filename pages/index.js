@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       router.push("https://www.youtube.com/@JFWooten4");
-    }, 0);
+    }, 10);
     return () => clearTimeout(redirectTimeout);
   }, []);
   
