@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      router.push("https://www.youtube.com/@JFWooten4");
+      router.push("https://www.youtube.com/jfwooten4?sub_confirmation=1");
     }, 0);
     return () => clearTimeout(redirectTimeout);
   }, []);
