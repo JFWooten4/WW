@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      router.push("https://www.youtube.com/@JFWooten4");
+      router.push("https://youtu.be/FwjDQ-h3TQE");
     }, 0);
     return () => clearTimeout(redirectTimeout);
   }, []);
@@ -20,23 +20,6 @@ export default function Home() {
         <title>Wooten Wealth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <img
-          src="imgs/smse-desktop.png"
-          alt="Stock Market Secrets Exposed"
-          style={{ maxWidth: "500px", height: "auto", marginTop: "35px" }} // Add marginTop
-        />
-        
-        <iframe
-          aria-label="Wooten Wealth Pre-Launch Signups"
-          frameBorder="0"
-          style={{ height: "600px", width: "99%", border: "none" }}
-          src="https://forms.zohopublic.com/blocktransfer/form/WootenWealthPreLaunchSignups/formperma/93cnN8rejRNSy4wtlV7CELjldUtFNpkG-PYGBwrfBK4"
-        ></iframe>
-      </main>
-
-      <Footer />
     </div>
   );
 }
